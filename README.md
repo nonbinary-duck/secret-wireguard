@@ -26,8 +26,7 @@ echo "SERVER_PRIVATE_KEY=$(cat /tmp/server_private.key)"
 echo "SERVER_PUBLIC_KEY=$(cat /tmp/server_public.key)"
 echo "CLIENT_PRIVATE_KEY=$(cat /tmp/client_private.key)"
 echo "CLIENT_PUBLIC_KEY=$(cat /tmp/client_public.key)"
-echo "PRESHARED_KEY=$(cat /tmp/preshared.key)"
-'
+echo "PRESHARED_KEY=$(cat /tmp/preshared.key)"'
 ```
 
 ### Generate a cryptographically secure udp2raw password
