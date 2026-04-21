@@ -15,7 +15,7 @@ This prints:
 - WireGuard pre-shared key
 
 ```bash
-docker run --rm -it lscr.io/linuxserver/wireguard:latest sh -lc '
+docker run --rm --entrypoint /bin/sh -it lscr.io/linuxserver/wireguard:latest -lc '
 umask 077
 
 wg genkey | tee /tmp/server_private.key | wg pubkey > /tmp/server_public.key
