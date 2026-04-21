@@ -34,6 +34,11 @@ echo "PRESHARED_KEY=$(cat /tmp/preshared.key)"'
 ```bash
 echo "UDP2RAW_PASSWORD=$(head -c 32 /dev/urandom | base64)"
 ```
+### Generate a cryptographically random udp2raw port above 1024
+
+```bash
+echo "UDP2RAW_PORT=$(( ( $(od -An -N2 -tu2 /dev/urandom) % 64511 ) + 1025 ))"
+```
 
 ## Security notes
 
