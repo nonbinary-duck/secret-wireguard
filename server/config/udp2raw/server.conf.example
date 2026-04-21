@@ -1,0 +1,9 @@
+-s
+-l 0.0.0.0:4096
+-r 127.0.0.1:51820
+--raw-mode faketcp
+--cipher-mode aes128cbc
+--auth-mode hmac_sha1
+-k REPLACE_WITH_UDP2RAW_PASSWORD
+-a
+--log-level 4
