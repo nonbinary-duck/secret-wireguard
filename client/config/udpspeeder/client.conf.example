@@ -1,0 +1,11 @@
+mode=client
+listen=127.0.0.1:5000
+remote=127.0.0.1:4096
+# Leave commented out to not use xor encryption (pointless with wireguard and udp2raw)
+# key=REPLACE_WITH_UDPSPEEDER_KEY
+fec=20:4
+fec_mode=0
+mtu=1200
+timeout=8
+queue_len=200
+log_level=4

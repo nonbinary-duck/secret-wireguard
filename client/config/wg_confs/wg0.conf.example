@@ -7,5 +7,5 @@ MTU = 1200
 PublicKey = REPLACE_WITH_SERVER_PUBLIC_KEY
 PresharedKey = REPLACE_WITH_PRESHARED_KEY
 AllowedIPs = 10.8.0.0/24
-Endpoint = 127.0.0.1:51820
+Endpoint = 127.0.0.1:5000
 PersistentKeepalive = 20

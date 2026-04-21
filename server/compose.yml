@@ -3,21 +3,14 @@ services:
     build:
       context: ../image
     container_name: secretwireguard-server
+    env_file:
+      - ./.env
     network_mode: host
     cap_add:
       - NET_ADMIN
       - NET_RAW
       - SYS_MODULE
-    environment:
-      SECRETWIREGUARD_MODE: server
-      UDP2RAW_CONF: /config/udp2raw/server.conf
-      WG_CONF: /config/wg_confs/wg0.conf
-      TZ: Europe/London
-      PUID: "1000"
-      PGID: "1000"
     volumes:
       - ./config:/config
       - /lib/modules:/lib/modules:ro
-    sysctls:
-      net.ipv4.conf.all.src_valid_mark: "1"
     restart: unless-stopped

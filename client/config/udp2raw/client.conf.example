@@ -1,5 +1,5 @@
 -c
--l 127.0.0.1:51820
+-l 127.0.0.1:4096
 -r YOUR_SERVER_PUBLIC_IP_OR_DNS:4096
 --raw-mode faketcp
 --cipher-mode aes128cbc
