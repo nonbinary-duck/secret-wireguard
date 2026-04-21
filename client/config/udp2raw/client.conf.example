@@ -7,3 +7,4 @@
 -k REPLACE_WITH_UDP2RAW_PASSWORD
 -a
 --log-level 4
+--fix-gro
